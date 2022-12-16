@@ -1,0 +1,169 @@
+@media (min-width: 1200px) {
+    .wrapper {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .my-card-img {
+        max-height: 300px;
+        min-height: 299px;
+        object-fit: cover;
+    }
+
+    .my-form > * {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .my-form > * {
+        padding: 10px;
+    }
+
+    .form-block {
+        padding: 20px;
+        /*max-height: 100%;*/
+        width: 600px;
+        border-radius: .5rem;
+
+    }
+
+    .login-title {
+        margin: 2.5rem !important;
+    }
+
+    .main-block {
+        background: rgba(242, 244, 247, 0.9);
+    }
+
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        padding: 0 !important;
+    }
+
+    .col {
+        padding: 0 !important;
+    }
+
+    .cards-block {
+        padding: 0 4px !important;
+    }
+
+    .my-form {
+        padding: 5px;
+    }
+
+    .form-block {
+        padding: 0;
+        min-height: 0;
+        /*height: 100%;*/
+        /*width: 100%;*/
+        border-radius: .5rem;
+
+    }
+
+    .login-title {
+        margin: 1rem !important;
+    }
+
+    .main-block {
+        background: rgba(33, 37, 41, .6);
+    }
+
+}
+
+
+@media (min-height: 900px) {
+    .form-block > * > * {
+        /*height: 800px;*/
+        padding: 15px 0;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-block {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    /*height: 2000px;*/
+
+}
+
+.navbar-brand {
+    font-size: 1.45em !important;
+}
+
+.nav-item {
+    font-size: 1.1em;
+    padding: 0 7px;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+}
+
+.dropdown-item {
+    padding-left: 1.5rem !important;
+    font-size: 1.05em;
+}
+
+.my-card-link {
+    color: unset;
+    text-decoration: none;
+}
+
+.my-card-img {
+
+    transition: .2s;
+}
+
+.my-card-img:hover {
+    transition: .12s;
+    opacity: 0.6;
+}
+
+.col .img {
+    background: #0b0d0e;
+    border-radius: 0.25rem;
+}
+
+.form-block {
+
+    background: rgba(33, 37, 41, .8);
+    color: white;
+
+}
+
+.login-title {
+    font-size: 3rem !important;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+
+.form-control {
+    color: white !important;
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.btn-bgish {
+    padding: 7px 15px !important;
+    color: white !important;
+    background-color: #063356 !important;
+    transition: .05s !important;
+}
+
+.btn-bgish:hover {
+    background-color: #0d6efd !important;
+    transform: scale(1.1);
+    transition: .05s !important;
+}
