@@ -13,5 +13,6 @@ def get_files(target):
 
 def bg_counter():
     DIR = url_for('static', filename='Data/images/backgrounds')
-    file = random.randint(1, get_files(DIR) - 1)
+    print(DIR)
+    file = random.randint(1, get_files(DIR) )
     return DIR + "/" + str(file) + ".png"
