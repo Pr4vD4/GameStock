@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% include "components/css.html" %}
+    {% include "components/scripts.html" %}
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Serega Pirat</title>
+    {% endif %}
+
+
+    <style type="text/css">
+        body {
+            background: url("{{ bg }}"), black;
+        }
+
+        {% block style %}{% endblock %}
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container wrapper h-100">
+    {% include "components/header.html" %}
+    <div class="container main-block">
+        {% block content %}{% endblock %}
+    </div>
+
+</div>
+
+</body>
+</html>

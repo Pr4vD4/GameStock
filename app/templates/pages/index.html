@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block style %}
+body {
+background-attachment: unset;
+}
+{% endblock %}
+
+
+{% block content %}
+<div class="container cards-block">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for page_id in range(1, 5) %}
+        {% include "components/card.html" %}
+        {% endfor %}
+        <div class="col">
+            <div class="card h-100">
+                <div class="img">
+                    <a href="">
+                        <img
+                                src="https://thelastgame.ru/wp-content/uploads/2018/02/20710e6be182f82dedb4bc54000b87dfe797aa00d27768b016a8bf24b0a8cd97-520x245.jpg"
+                                class="my-card-img card-img-top" alt="...">
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title"><a href="" class="my-card-link">Card title</a></h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="img">
+                    <a href="">
+                        <img
+                                src="https://thelastgame.ru/wp-content/uploads/2022/11/header-28-520x245.jpg"
+                                class="my-card-img card-img-top" alt="...">
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title"><a href="" class="my-card-link">Card title</a></h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

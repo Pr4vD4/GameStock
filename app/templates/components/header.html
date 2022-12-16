@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">GameStock</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link {% if page == 'home' %} disabled {% endif %}" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/registration">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/randomgame">Случайная игра</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Жанры
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">RPG</a></li>
+                        <li><a class="dropdown-item" href="#">Аркады</a></li>
+                        <li><a class="dropdown-item" href="#">Приключения</a></li>
+                        <li><a class="dropdown-item" href="#">Симуляторы</a></li>
+                        <li><a class="dropdown-item" href="#">Стратегии</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

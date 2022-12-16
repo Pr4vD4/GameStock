@@ -1,0 +1,38 @@
+{% extends "form_page.html" %}
+
+{% block content%}
+
+<div class="login-title h1 text-center">Registration</div>
+
+<form class="row g-3 my-form">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="youremailadress@*.*">
+  </div>
+  <div class="col-md-6">
+    <label for="inputUsername" class="form-label">Username</label>
+    <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+  </div>
+  <div class="col-12">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword" placeholder="********">
+  </div>
+  <div class="col-12">
+    <label for="inputPassword2" class="form-label">Confirm password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="********">
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-bgish">Register</button>
+  </div>
+</form>
+<div class="h5 text-center"><a href="/login" class="my-card-link">Already have an account?</a></div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "form_page.html" %}
+
+{% block content%}
+
+<div class="login-title h1 text-center">Log in</div>
+
+<form class="row g-3 my-form" method="POST">
+  {{ form.csrf_token }}
+  <div class="col-12">
+    <label for="input_username" class="form-label">Username</label>
+    {{ form.input_username(class="form-control", placeholder="Username") }}
+  </div>
+  <div class="col-12">
+    <label for="input_password" class="form-label">Password</label>
+    {{ form.input_password(class="form-control", placeholder="********") }}
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      {{ form.input_remember_me(class="form-check-input") }}
+      <label class="form-check-label" for="input_remember_me">
+        Remember me
+      </label>
+
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-bgish">Log in</button>
+  </div>
+</form>
+<div class="h5 text-center"><a href="/registration" class="my-card-link">Don't have an account?</a></div>
+{% endblock %}

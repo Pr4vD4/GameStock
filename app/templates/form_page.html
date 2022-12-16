@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% include "components/css.html" %}
+    {% include "components/scripts.html" %}
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Serega Pirat</title>
+    {% endif %}
+
+
+    <style type="text/css">
+        body {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            background: url("{{ bg }}"), black;
+        }
+
+        {
+        %
+        block
+        style
+        %
+        }
+        {
+        %
+        endblock
+        %
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<!--{% include "components/header.html" %}-->
+<div class="form-block">
+    <div class="container-fluid h-100 d-flex flex-column justify-content-evenly">
+        {% block content %}{% endblock %}
+        <div class="h5 text-center"><a href="/" class="my-card-link">Home</a></div>
+    </div>
+</div>
+
+
+</body>
+</html>
